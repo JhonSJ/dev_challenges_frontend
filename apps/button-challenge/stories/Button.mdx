@@ -1,0 +1,242 @@
+{/* Button.mdx */}
+import { Source, Meta, Story } from "@storybook/blocks";
+import { Icon } from "@iconify-icon/react";
+
+import { Button, Preview } from "@/components";
+import * as ButtonStories from "./Button.stories.tsx";
+
+# Button
+
+A button indicates a possible user action. They can be used to trigger a pop-up menu, open a link or submit a form.
+
+<Meta of={ButtonStories} />
+<Story of={ButtonStories.Default} />
+
+# Variants
+
+Button comes in three variants: default, outlined, and text. They should be used sparingly to avoid creating visual noise.
+
+## Default
+
+Button with default variant
+
+<Preview>
+  <Button>
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source language="jsx" dark={true} code="<Button />" />
+
+## Outlined
+
+Button with outlined variant and primary color
+
+<Preview>
+  <Button variant="outlined" color="primary">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button variant='outlined' color='primary' />"
+/>
+
+## Text
+
+Button with text variant and primary color
+
+<Preview>
+  <Button variant="text" color="primary">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button variant='text' color='primary' />"
+/>
+
+# Disabled Elevation
+
+Button with disabled shadow and primary color
+
+<Preview>
+  <Button variant="outlined" color="primary" disabledElevation={true}>
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button color='primary' disabledElevation={true} />"
+/>
+
+# Disabled
+
+<Preview>
+  <Button disabled={true}>
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source language="jsx" dark={true} code="<Button disabled={true} />" />
+
+<Preview>
+  <Button variant="text" disabled={true}>
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button variant='text' disabled={true} />"
+/>
+
+# Icons
+
+## Start Icon
+
+Button with start icon
+
+<Preview>
+  <Button
+    color="primary"
+    startIcon={<Icon icon="material-symbols:add-shopping-cart" />}
+  >
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button color='primary' startIcon={<Icon icon='material-symbols:add-shopping-cart' />} />"
+/>
+
+## End Icon
+
+Button with end icon
+
+<Preview>
+  <Button
+    color="primary"
+    endIcon={<Icon icon="material-symbols:add-shopping-cart" />}
+  >
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button color='primary' endIcon={<Icon icon='material-symbols:add-shopping-cart' />} />"
+/>
+
+# Sizes
+
+Buttons come in three sizes: small, medium, and large. They should be used sparingly to avoid creating visual noise.
+
+## Small
+
+Button with small size and primary color
+
+<Preview>
+  <Button color="primary" size="small">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button color='primary' size='small' />"
+/>
+
+## Medium
+
+Button with medium size and primary color
+
+<Preview>
+  <Button color="primary" size="medium">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button color='primary' size='medium' />"
+/>
+
+## Large
+
+Button with large size and primary color
+
+<Preview>
+  <Button color="primary" size="large">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source
+  language="jsx"
+  dark={true}
+  code="<Button color='primary' size='large' />"
+/>
+
+# Colors
+
+Buttons come in three colors: primary, secondary, and tertiary. They should be used sparingly to avoid creating visual noise.
+
+## Default
+
+Button with default color
+
+<Preview>
+  <Button>
+    <span>Default</span>
+  </Button>
+</Preview>
+<Source language="jsx" dark={true} code="<Button />" />
+
+## Primary
+
+Button with primary color
+
+<Preview>
+  <Button color="primary">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source language="jsx" dark={true} code="<Button color='primary' />" />
+
+## Secondary
+
+Button with secondary color
+
+<Preview>
+  <Button color="secondary">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source language="jsx" dark={true} code="<Button color='secondary' />" />
+
+## Danger
+
+Button with danger color
+
+<Preview>
+  <Button color="danger">
+    <span>Default</span>
+  </Button>
+</Preview>
+
+<Source language="jsx" dark={true} code="<Button color='danger' />" />
