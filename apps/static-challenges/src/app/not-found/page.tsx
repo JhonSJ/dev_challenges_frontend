@@ -18,7 +18,7 @@ export default function NotFound() {
       <header className="header">404 Not found</header>
 
       <article className="content">
-        <div className="w-full aspect-[539/447] m-auto max-w-[539px]">
+        <div className="left-section">
           <Image
             src="/Scarecrow.png"
             alt="not-found"
