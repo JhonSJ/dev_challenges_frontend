@@ -170,6 +170,12 @@ ul {
   flex-direction: column;
   justify-content: center;
   row-gap: 1.5rem;
+
+  padding-bottom: 5rem;
+
+  @media (min-width: 56.25rem) {
+    padding-bottom: 7rem;
+  }
 }
 
 .left__content__title {
@@ -203,6 +209,11 @@ ul {
 .right__content {
   flex-basis: 50%;
   position: relative;
+  padding-bottom: 5rem;
+
+  @media (min-width: 56.25rem) {
+    padding-bottom: 7rem;
+  }
 }
 
 .right__content__image {
@@ -216,12 +227,8 @@ ul {
 .right__content__float__card {
   position: absolute;
   margin: 0 auto;
+  bottom: 0;
   right: clamp(0.75rem, 3vw, 2rem);
-  bottom: -5rem;
-
-  @media (min-width: 56.25rem) {
-    bottom: -7rem;
-  }
 }
 
 .card {
@@ -237,7 +244,6 @@ ul {
   padding-right: clamp(1.2rem, 5vw, 1.62rem);
   padding-top: clamp(1rem, 5vw, 1.25rem);
   padding-bottom: clamp(1.5rem, 5vw, 2.25rem);
-
 }
 
 .card__wrapper__title {
