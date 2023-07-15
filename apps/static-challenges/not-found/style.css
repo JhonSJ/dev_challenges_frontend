@@ -1,7 +1,21 @@
-.root-container {
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
   --text-primary-color: #333333;
   --text-secondary-color: #4f4f4f;
+  --text-tertiary-color: #bdbdbd;
+}
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Space Mono, monospace;
+}
+
+.root__container {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
@@ -15,7 +29,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: var(--text-primary-color);
-  
+
   padding-top: clamp(1.25rem, 5vw, 2.5rem);
   padding-left: clamp(1.5rem, 5vw, 4.8125rem);
   padding-right: clamp(1.5rem, 5vw, 4.8125rem);
@@ -36,24 +50,24 @@
   }
 }
 
-.left-section {
+.left__section {
   width: 100%;
   margin: 0 auto;
   aspect-ratio: 539/447;
   max-width: 18rem;
-  
+
   @media (min-width: 50rem) {
     max-width: 33.75rem;
   }
 }
 
-.right-section {
+.right__section {
   display: flex;
   flex-direction: column;
   row-gap: clamp(1.875rem, 5vw, 2.25rem);
 }
 
-.right-section__title {
+.right__section__title {
   color: var(--text-primary-color);
   font-size: clamp(3rem, 5vw, 4rem);
   font-style: normal;
@@ -62,7 +76,7 @@
   letter-spacing: clamp(-0.14rem, -5vw, -0.105rem);
 }
 
-.right-section__description {
+.right__section__description {
   color: var(--text-secondary-color);
   font-size: clamp(1.125rem, 3vw, 1.5rem);
   font-style: normal;
@@ -71,7 +85,7 @@
   letter-spacing: clamp(-0.0525rem, -5vw, -0.03938rem);
 }
 
-.right-section__button {
+.right__section__button {
   color: #fff;
   font-size: 0.875rem;
   font-style: normal;
@@ -80,6 +94,26 @@
   letter-spacing: -0.03063rem;
   text-transform: uppercase;
   padding: 1.5rem 2.7rem;
-  background-color:  var(--text-primary-color);
+  background-color: var(--text-primary-color);
   width: fit-content;
+  margin-top: 1.75rem;
+}
+
+.information__content {
+  color: var(--text-tertiary-color);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1.5rem 0;
+}
+
+.information__content__username {
+  color: var(--text-primary-color);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
 }
