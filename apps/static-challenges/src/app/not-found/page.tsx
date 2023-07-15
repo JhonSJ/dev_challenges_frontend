@@ -14,11 +14,11 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <section className={`root-container ${space_mono.className}`}>
+    <main className={`root-container ${space_mono.className}`}>
       <header className="header">404 Not found</header>
 
       <article className="content">
-        <div className="left-section">
+        <section className="left-section">
           <Image
             src="/Scarecrow.png"
             alt="not-found"
@@ -27,19 +27,19 @@ export default function NotFound() {
             priority
             className="m-auto"
           />
-        </div>
+        </section>
 
-        <div className="right-section">
+        <section className="right-section">
           <h1 className="right-section__title">I have bad news for you</h1>
           <p className="right-section__description">
             The page you are looking for might be removed or is temporarily
             unavailable
           </p>
-          <button className="right-section__button mt-7">Back to homepage</button>
-        </div>
+          <button className="right-section__button">Back to homepage</button>
+        </section>
       </article>
 
       <Information title="@JhonSJ" href="https://github.com/JhonSJ" />
-    </section>
+    </main>
   );
 }
