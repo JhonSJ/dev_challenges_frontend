@@ -160,7 +160,7 @@ ul {
   @media (min-width: 37.5rem) {
     flex-direction: row;
     justify-content: space-between;
-    aling-items: center;
+    align-items: center;
     column-gap: 2rem;
   }
 }
